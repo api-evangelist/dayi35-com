@@ -1,10 +1,20 @@
 aid: dayi35-com
-name: dayi35.com
-description: 'dayi35.com is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+name: 大易有塑 (dayi35.com)
+description: 'dayi35.com (大易有塑, Dayi Yousu) is a Chinese business-to-business e-commerce
+  and trading platform for plastics and chemical raw materials, operated out of Dongguan,
+  Guangdong. The platform runs an online mall covering general-purpose plastics (ABS,
+  EVA, GPPS, HIPS, LLDPE), engineering plastics (PA6, PA66, PBT, PC, PET, PMMA, PPS,
+  LCP), modified and recycled resins, and chemical additives such as titanium dioxide,
+  carbon black, flame retardants and release agents. Alongside the mall it operates
+  a buyer request-for-quote board (求购), a daily domestic and international price and
+  market-data service, industry news, and supply-chain services spanning warehousing,
+  logistics distribution, and e-commerce enablement for plastics and chemicals enterprises.
+  Buyer and seller activity runs through an authenticated member console at /uc. The
+  site is filed under Chinese ICP licence 粤ICP备15037802号.'
 url: https://raw.githubusercontent.com/api-evangelist/dayi35-com/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+x-source-url: https://forgeglobal.com/dayi35-com_stock/
 x-tier: stub
 x-tier-reason: harvest
 specificationVersion: '0.20'
@@ -12,6 +22,15 @@ created: '2026-08-11'
 modified: '2026-08-11'
 tags:
 - Company
+- Plastics
+- Chemicals
+- B2B Marketplace
+- E-Commerce
+- Supply Chain
+- Logistics
+- Commodities
+- Market Data
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +39,36 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: https://forgeglobal.com/dayi35-com_stock/
+  url: https://www.dayi35.com/
+- type: About
+  url: https://www.dayi35.com/about/index.html
+- type: DomainSecurity
+  url: security/dayi35-com-domain-security.yml
+x-enrichment:
+  date: '2026-08-11'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: blocked
+  reason: geo-blocked
+  detail: >-
+    The dayi35.com origin (42.157.193.96, and 42.157.193.97 for api.dayi35.com) accepts
+    no TCP connection on port 80 or 443 from a US vantage point — every probe returned
+    a connection timeout rather than an HTTP status — so no live page, robots.txt,
+    /.well-known/ path or spec location could be read; an October 2025 Wayback capture
+    of the homepage shows a Chinese-language plastics trading portal with no developer
+    or 开放平台 section, but that is a ten-month-old snapshot of one page and is not
+    evidence about the current surface.
+  evidence:
+  - url: https://www.dayi35.com/
+    status: 0
+  - url: https://www.dayi35.com/robots.txt
+    status: 0
+  - url: https://api.dayi35.com/openapi.json
+    status: 0
+  - url: https://www.dayi35.com/.well-known/agent-card.json
+    status: 0
+  - url: http://web.archive.org/web/20251012232446/https://www.dayi35.com/
+    status: 200
+  checked: '2026-08-11'
