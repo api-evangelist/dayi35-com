@@ -3,38 +3,13 @@ method: probed
 source: direct HTTPS probes of https://www.dayi35.com/.well-known/* and https://api.dayi35.com/
 host: https://www.dayi35.com
 reachable: false
-note: >-
-  No /.well-known/ document could be confirmed present or absent. The origin refused
-  every TCP connection from the probe location: dayi35.com and www.dayi35.com resolve
-  to 42.157.193.96 and api.dayi35.com to 42.157.193.97, and ports 80 and 443 on both
-  addresses are filtered from a US vantage point. Every request below terminated in a
-  connection timeout, so `status: null` here means UNREACHED, not 404 — this file
-  records our probe wall, not an absence on the provider's side. No WellKnown or
-  SecurityTxt pointer is emitted, because nothing was observed to be served. Re-probe
-  from a vantage point inside mainland China (see x-coverage state blocked /
-  geo-blocked in apis.yml).
-documents:
-- path: /.well-known/security.txt
-  status: null
-  error: connection-timeout
-- path: /.well-known/openid-configuration
-  status: null
-  error: connection-timeout
-- path: /.well-known/oauth-authorization-server
-  status: null
-  error: connection-timeout
-- path: /.well-known/api-catalog
-  status: null
-  error: connection-timeout
-- path: /.well-known/ai-plugin.json
-  status: null
-  error: connection-timeout
-- path: /.well-known/agent-card.json
-  status: null
-  error: connection-timeout
-- path: /.well-known/agent.json
-  status: null
-  error: connection-timeout
+note: 'No /.well-known/ document could be confirmed present or absent. The origin refused every TCP connection
+  from the probe location: dayi35.com and www.dayi35.com resolve to 42.157.193.96 and api.dayi35.com to
+  42.157.193.97, and ports 80 and 443 on both addresses are filtered from a US vantage point. Every request
+  below terminated in a connection timeout, so `status: null` here means UNREACHED, not 404 — this file
+  records our probe wall, not an absence on the provider''s side. No WellKnown or SecurityTxt pointer
+  is emitted, because nothing was observed to be served. Re-probe from a vantage point inside mainland
+  China (see x-coverage state blocked / geo-blocked in apis.yml).'
 other_paths:
 - path: /robots.txt
   status: null
@@ -72,6 +47,23 @@ x-evidence:
   tcp_443: filtered
   tcp_80: filtered
   registrar: Chengdu West Dimension Digital Technology Co., Ltd.
-  nameservers: [f1g1ns1.dnspod.net, f1g1ns2.dnspod.net]
+  nameservers:
+  - f1g1ns1.dnspod.net
+  - f1g1ns2.dnspod.net
   domain_created: '2015-04-28'
   domain_expires: '2027-04-28'
+hosts:
+- host: https://www.dayi35.com
+  documents:
+  - path: /.well-known/security.txt
+  - path: /.well-known/openid-configuration
+  - path: /.well-known/oauth-authorization-server
+  - path: /.well-known/api-catalog
+  - path: /.well-known/ai-plugin.json
+  - path: /.well-known/agent-card.json
+  - path: /.well-known/agent.json
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
