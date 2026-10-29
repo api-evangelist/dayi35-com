@@ -1,4 +1,4 @@
-# dayi35.com
+# 大易有塑 (dayi35.com)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,79 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-dayi35.com is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://forgeglobal.com/dayi35-com_stock/
+dayi35.com (大易有塑, Dayi Yousu) is a Chinese business-to-business e-commerce and trading platform for plastics and chemical raw materials, operated out of Dongguan, Guangdong. The platform runs an online mall covering general-purpose plastics (ABS, EVA, GPPS, HIPS, LLDPE), engineering plastics (PA6, PA66, PBT, PC, PET, PMMA, PPS, LCP), modified and recycled resins, and chemical additives such as titanium dioxide, carbon black, flame retardants and release agents. Alongside the mall it operates a buyer request-for-quote board (求购), a daily domestic and international price and market-data service, industry news, and supply-chain services spanning warehousing, logistics distribution, and e-commerce enablement for plastics and chemicals enterprises. Buyer and seller activity runs through an authenticated member console at /uc. The site is filed under Chinese ICP licence 粤ICP备15037802号.
+
+**Areas:** Company · Plastics · Chemicals · B2B Marketplace · E-Commerce · Supply Chain · Logistics · Commodities · Market Data · China
+
+## 大易有塑 (dayi35.com) on APIs.io
+
+Everything profiled for 大易有塑 (dayi35.com) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/dayi35-com/](https://apis.io/providers/dayi35-com/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Dayi35 Com Domain Security](https://apis.io/security/dayi35-com/dayi35-com-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.dayi35.com/)
+
+## API Evangelist rating
+
+**Kin Score 2.2** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 44.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.6** — Securities & Market Data
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/dayi35-com/](https://apis.io/providers/dayi35-com/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for 大易有塑 (dayi35.com): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/dayi35-com/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
